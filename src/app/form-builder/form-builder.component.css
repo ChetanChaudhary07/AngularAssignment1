@@ -1,0 +1,183 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+.tbl {
+  margin-bottom: 15px;
+}
+
+.new-comp {
+  border: 2px dashed #007bff;
+  background-color: #e7f3ff;
+  width: 500px;
+  height: 400px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #007bff;
+  text-align: center;
+  font-size: 18px;
+}
+
+.headings {
+  color: #4a4a4a;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.container, .generateForm, .outputHTML {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #555;
+}
+
+.input-group input,
+.input-group select,
+button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+/* Ensuring input fields and buttons have the same size */
+/* .input-group input, */
+/* .input-group select { */
+  /* width: calc(100% - 20px); Adjusting width to account for padding */
+/* } */
+
+button {
+  background-color: #3E5879; /* New color for buttons */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+  background-color: #218838; /* Darker shade for hover */
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 400px;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+table th {
+  background-color: #6A9AB0;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Center aligning Name and Type columns */
+table th.name,
+table td.name,
+table th.type,
+table td.type {
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+pre {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #444;
+  font-size: 14px;
+  overflow: auto;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  color: #213555;
+}
+
+h3{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  color: #213555;
+}
+
+select{
+  width: 100%;
+}
+
+
+.frm {
+  margin: auto;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#generatedForm{
+  word-wrap: break-word;
+}
