@@ -1,15 +1,30 @@
+
 <h2>Form Builder</h2>
 
 <div class="container">
   <form (ngSubmit)="addElement()">
     <div class="input-group">
       <label for="inputLabel">Input Label:</label>
-      <input class="frm" type="text" id="inputLabel" [(ngModel)]="inputLabel" name="inputLabel" required />
+      <input
+        class="frm"
+        type="text"
+        id="inputLabel"
+        [(ngModel)]="inputLabel"
+        name="inputLabel"
+        required
+      />
     </div>
 
     <div class="input-group">
       <label for="inputName">Input Name:</label>
-      <input class="frm" type="text" id="inputName" [(ngModel)]="inputName" name="inputName" required />
+      <input
+        class="frm"
+        type="text"
+        id="inputName"
+        [(ngModel)]="inputName"
+        name="inputName"
+        required
+      />
     </div>
 
     <div class="input-group">
@@ -34,7 +49,6 @@
     </div>
 
     <button type="button" (click)="addElement()">Add Element</button>
-    
   </form>
 </div>
 
@@ -50,26 +64,21 @@
       </tr>
     </thead>
     <tbody>
-      @for(element of formElements; track element.name){
-        <tr>
-          <td>{{ element.name }}</td>
-          <td>{{ element.type }}</td>
-          <td>{{ element.required ? 'Yes' : 'No' }}</td>
-          <td>{{ element.label }}</td>
-        </tr>
-      }
+      <tr *ngFor="let element of formElements">
+        <td>{{ element.name }}</td>
+        <td>{{ element.type }}</td>
+        <td>{{ element.required ? 'Yes' : 'No' }}</td>
+        <td>{{ element.label }}</td>
+      </tr>
     </tbody>
   </table>
 
   <button (click)="createForm()">Generate HTML</button>
-  <!-- <button (click)="navigateToDynamicForm()">Generate Form</button> -->
 </div>
 
 <div class="outputHTML">
   <div id="generatedForm">
-    @if(generatedFormHtml){
-      <h3>Generated Form HTML</h3>
-      <pre>{{ generatedFormHtml }}</pre>
-    }
+    <h3 *ngIf="generatedFormHtml">Generated Form HTML</h3>
+    <pre *ngIf="generatedFormHtml">{{ generatedFormHtml }}</pre>
   </div>
 </div>

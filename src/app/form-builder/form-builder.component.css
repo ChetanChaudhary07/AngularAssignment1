@@ -74,11 +74,6 @@ button {
   box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
 }
 
-/* Ensuring input fields and buttons have the same size */
-/* .input-group input, */
-/* .input-group select { */
-  /* width: calc(100% - 20px); Adjusting width to account for padding */
-/* } */
 
 button {
   background-color: #3E5879; /* New color for buttons */
@@ -144,6 +139,7 @@ pre {
   color: #444;
   font-size: 14px;
   overflow: auto;
+  position: relative;
 }
 
 h2{
